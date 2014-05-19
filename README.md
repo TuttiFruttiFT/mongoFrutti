@@ -1,0 +1,4 @@
+mongoFrutti
+===========
+
+Prueba base mongo
