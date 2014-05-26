@@ -8,8 +8,13 @@ GET     /                           controllers.Application.index()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
-#registrarUsuario
-#validarUsuario
-#partidasActivas
-#buscarPartida
+POST	/usuario/registro			controllers.Usuarios.registrar()
+
+GET		/usuario/validacion			controllers.Usuarios.validar(usuario,clave,tipo)
+
+GET		/partida/activas/:idJugador	controllers.Partidas.obtenerPartidasActivas(idJugador)
+
+GET		/partida/busqueda			controllers.Partidas.buscar(jugadores: Integer ?= 1)
+
+
 #enviarCategorías
