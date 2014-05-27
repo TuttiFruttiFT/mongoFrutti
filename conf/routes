@@ -16,5 +16,6 @@ GET		/partida/activas/:idJugador	controllers.Partidas.obtenerPartidasActivas(idJ
 
 GET		/partida/busqueda			controllers.Partidas.buscar(jugadores: Integer ?= 1)
 
+POST	/partida/turno				controllers.Partidas.turno()
 
 #enviarCategorías
